@@ -1,0 +1,33 @@
+@section('title')
+About
+@endsection
+@extends('layout/v_template')
+@section('page')
+Halaman About
+@endsection
+@section('content')
+<div class="card">
+    <div class="card-header">
+      <h3 class="card-title">Title</h3>
+
+      <div class="card-tools">
+        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+          <i class="fas fa-minus"></i>
+        </button>
+        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <div class="card-body">
+     <h6>{{ $nama_pt }}</h6>
+     <h6>{{ $alamat }}</h6>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer">
+      Footer
+    </div>
+    <!-- /.card-footer-->
+  </div>
+@endsection
+
